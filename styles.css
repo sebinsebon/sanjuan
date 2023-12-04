@@ -1,0 +1,323 @@
+html   {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    background-color: #000000;
+}
+.miBoton {
+    border: none; /* Esto elimina el borde */
+    background-color: black; /* Configura el color de fondo */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    
+    
+}
+
+header {
+    background-color: #011936;
+    padding: 50px;
+    text-align: center; /* Añadido */
+    background-image: url('http://www.w3.org/2000/svg');
+    background-size: 3000px 1000px;
+    background-attachment: fixed;
+}
+
+
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #001c4e;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+
+.services {
+    background-color: #000000;
+    padding: 20px;
+    color: #fff;
+    text-align: center; /* Añadido */
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services ul li {
+    padding: 10px 0;
+}
+
+footer {
+    background-color: #000000;
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.dynamic-width {
+    max-width: 20%; /* Aumentamos el ancho máximo */
+    margin: 0 auto; /* Centramos horizontalmente */
+    text-align: center; /* Centramos el texto */
+}
+
+
+/* El resto de tu CSS permanece igual */
+
+.hero h1,
+.hero p,
+.historia h2,
+.historia p,
+.integrantes h2,
+.integrantes p,
+.iconic-moments h2,
+.iconic-moments p {
+    text-align: center;
+}
+
+
+
+
+.full-height {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Asegura el texto centrado horizontalmente */
+    flex-direction: column;
+}
+
+/* Estilos para el h1 en las secciones */
+.full-height h1 {
+    margin: 0; /* Elimina cualquier margen predeterminado */
+    height: 100%; /* Ocupa toda la altura de la sección */
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para mover el h2 y el texto hacia abajo */
+.full-height h2 {
+    margin-top: 490px; /* Ajusta según sea necesario */
+}
+
+.full-height p {
+    margin-top: 20px; /* Ajusta según sea necesario */
+
+}
+
+
+/* Estilos específicos para la sección "Integrantes" */
+#integrantes h2,
+#integrantes p {
+    margin-top: 0; /* Ajusta el margen según sea necesario */
+}
+
+/* Estilos específicos para la sección "Historia" */
+#historia h2,
+#historia p {
+    margin-top: 0; /* Ajusta el margen según sea necesario */
+}
+
+/* Estilos específicos para la sección "Historia" */
+#iconic-moments h2,
+#iconic-moments p {
+    margin-top: 0; /* Ajusta el margen según sea necesario */
+}
+h1 {
+    /* ... */
+    font-size: 100px;
+    font-family: 'Lilita One', sans-serif;
+
+}
+
+
+
+    body {
+        margin: 0;
+       
+
+    
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para pantallas más pequeñas */
+
+    .hero h1 {
+        font-size: 40px; /* Tamaño de letra más pequeño para pantallas pequeñas */
+    }
+
+    .dynamic-width {
+        max-width: 90%; /* Aumentamos el ancho máximo para pantallas pequeñas */
+    }
+
+    .hero,
+    .services,
+    .full-height h2 {
+        padding: 10px; /* Reducimos el relleno en secciones para pantallas pequeñas */
+    }
+
+    header {
+        padding: 20px; /* Reducimos el relleno del encabezado para pantallas pequeñas */
+    }
+}
+
+.botonsitos {
+    border-radius: 100px;
+    background-color: #2280be;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+  }
+
+  .iconico {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #195985;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    box-shadow: 10px 10px 75px -12px rgba(0,0,0,1);
+    -webkit-box-shadow: 10px 10px 75px -12px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 10px 75px -12px rgba(0,0,0,1);
+  }
+  
+  .iconico:hover {
+    background-color: #5b9eca;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+  
+  .iconico:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+
+  .historico {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #195985;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    box-shadow: 10px 10px 75px -12px rgba(0,0,0,1);
+-webkit-box-shadow: 10px 10px 75px -12px rgba(0,0,0,1);
+-moz-box-shadow: 10px 10px 75px -12px rgba(0,0,0,1);
+  }
+  
+  .historico:hover {
+    background-color: #5b9eca;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+  
+  .historico:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+
+  .integracion {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #195985;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    box-shadow: 10px 10px 75px -12px rgba(0,0,0,1);
+-webkit-box-shadow: 10px 10px 75px -12px rgba(0,0,0,1);
+-moz-box-shadow: 10px 10px 75px -12px rgba(0,0,0,1);
+  }
+  
+  .integracion:hover {
+    background-color: #5b9eca;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+  
+  .integracion:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+
+
+body {
+    scroll-padding-top: 1.25rem;
+}
+
+header {
+    background: url(wave2.2.png);
+    background-size: contain;
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    
+}
+
+header {
+    background-color: #001c4e;
+}
+
+#iconic-moments {
+    background-color: #1a448d;
+    border-radius: 5%;
+    box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75); 
+}
+
+#historia {
+    background-color: #1a448d;
+    border-radius: 5%;
+    box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75); 
+}
+
+#integrantes {
+    box-sizing: border-box;
+    background-color: #1a448d;
+    border-radius: 5%;
+    box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75); 
+}
