@@ -1,3 +1,4 @@
+
 html   {
     scroll-behavior: smooth;
 }
@@ -25,7 +26,7 @@ body {
 
 header {
     background-color: #011936;
-    padding: 0px;
+    padding: 50px;
     text-align: center; /* Añadido */
     background-image: url('http://www.w3.org/2000/svg');
     background-size: 3000px 1000px;
@@ -155,17 +156,24 @@ h1 {
 
 }
 
-
-
-    body {
-        margin: 0;
-       
-
-    
+body {
+    margin: 0;
 }
 
 @media only screen and (max-width: 600px) {
     /* Estilos específicos para pantallas más pequeñas */
+    .hero h1 {
+        font-size: 40px; /* Tamaño de letra más pequeño para pantallas pequeñas */
+    }
+    .hero,
+    .services,
+    .full-height h2 {
+        padding: 10px; /* Reducimos el relleno en secciones para pantallas pequeñas */
+    }
+    
+    header {
+        padding: 20px; /* Reducimos el relleno del encabezado para pantallas pequeñas */
+    }
 
     .hero h1 {
         font-size: 40px; /* Tamaño de letra más pequeño para pantallas pequeñas */
@@ -303,7 +311,7 @@ header {
     border-radius: 5%;
     box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75); 
+    -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
 }
 
 #historia {
@@ -314,6 +322,13 @@ header {
     box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75); 
+    box-sizing: content-box;
+background-color: #1a448d;
+border-radius: 5%;
+box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+
 }
 
 #integrantes {
@@ -322,214 +337,43 @@ header {
     border-radius: 5%;
     box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75); }
-
-section {
-    padding: 200px 100px;
+    -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
 }
 
-.inicio {
-    text-align: start;
-}
-
-.full-height {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 50px
-}
-
-#p1 {
-    width: 40;
-}
-
-@media only screen and (max-width: 600px) {
-    /* ... Otros estilos ... */
-    .hero h1 {
-        font-size: 24px; /* Tamaño de letra más pequeño para pantallas pequeñas */
-    }
-    /* Ajusta los márgenes según sea necesario */
-    .hero,
-    .services,
-    .full-height h2 {
-        padding: 10px;
-    }
-
-    header {
-        padding: 20px;
+@media (width <= 1025px) {
+    .dynamic-width {
+        font-size: 14px;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
+@media (width <= 830px) {
+    .dynamic-width {
+        font-size: 13px;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    section {
-        padding: 50px 20px;
-    }
-
-    .full-height {
-        margin: 0;
+@media (width <= 700px) {
+    .dynamic-width {
+        font-size: 12px;
     }
 }
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.miBoton,
-.iconico,
-.historico,
-.integracion {
-    box-shadow: none;
-    transition: none;
-}
-
-@media only screen and (max-width: 600px) {
-    header {
-        background: none;
+@media (width <= 600px) {
+    .dynamic-width {
+        font-size: 11px;
     }
 }
-
-@media only screen and (max-width: 600px) {
-    section {
-        padding: 30px 20px; /* Ajusta según sea necesario */
+@media (width <= 500px) {
+    .dynamic-width {
+        font-size: 10px;
     }
 }
-
-.full-height {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-@media only screen and (max-width: 600px) {
-    /* Ajusta el tamaño de la fuente según sea necesario */
-    .full-height h2 {
-        font-size: 24px;
-    }
-
-    .full-height p {
-        font-size: 16px;
+@media (width <= 415px) {
+    .dynamic-width {
+        font-size: 9px;
     }
 }
-
-#iconic-moments h2,
-#iconic-moments p,
-#historia h2,
-#historia p,
-#integrantes h2,
-#integrantes p {
-    margin-top: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0 auto;
-    background-color: #000000;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
-header {
-    background-color: #011936;
-    padding: 50px;
-    text-align: center;
-    background-image: url('http://www.w3.org/2000/svg');
-    background-size: 3000px 1000px;
-    background-attachment: fixed;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero,
-.services,
-.full-height h2 {
-    padding: 20px;
-}
-
-section {
-    padding: 200px 100px;
-}
-
-.full-height {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 50px;
-}
-
-@media only screen and (max-width: 600px) {
-    body {
-        margin: 0;
+@media (width <= 345px) {
+    .dynamic-width {
+        font-size: 8px;
     }
-
-    header {
-        padding: 20px;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    .hero,
-    .services,
-    .full-height h2 {
-        padding: 10px;
-    }
-
-    section {
-        padding: 50px 20px;
-    }
-
-    .full-height {
-        margin: 0;
-    }
-
-    .full-height h2 {
-        margin-top: 20px;
-    }
-
-    .full-height p {
-        margin-top: 10px;
-    }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
