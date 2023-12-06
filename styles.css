@@ -17,7 +17,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
     
     
@@ -25,7 +25,7 @@ body {
 
 header {
     background-color: #011936;
-    padding: 50px;
+    padding: 0px;
     text-align: center; /* Añadido */
     background-image: url('http://www.w3.org/2000/svg');
     background-size: 3000px 1000px;
@@ -80,8 +80,9 @@ footer {
 }
 
 .dynamic-width {
-    max-width: 20%; /* Aumentamos el ancho máximo */
-    margin: 0 auto; /* Centramos horizontalmente */
+    padding: 0;
+    max-width: 50%; /* Aumentamos el ancho máximo */
+    margin: 400 auto; /* Centramos horizontalmente */
     text-align: center; /* Centramos el texto */
 }
 
@@ -169,11 +170,6 @@ h1 {
     .hero h1 {
         font-size: 40px; /* Tamaño de letra más pequeño para pantallas pequeñas */
     }
-
-    .dynamic-width {
-        max-width: 90%; /* Aumentamos el ancho máximo para pantallas pequeñas */
-    }
-
     .hero,
     .services,
     .full-height h2 {
@@ -187,16 +183,20 @@ h1 {
 
 .botonsitos {
     border-radius: 100px;
-    background-color: #2280be;
+    background-color: linear-gradient(yellow, red);
     color: #ffffff;
+    background-color: #08c4f4;
     font-weight: Bold;
     transition: all 0.5s;
-    box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
-  }
+    -webkit-box-shadow: 0px 0px 64px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 64px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 64px 4px rgba(0,0,0,0.75);
 
+  }
+  
   .iconico {
+    margin: 0px;
+    padding-right: 100;
     padding: 12.5px 30px;
     border: 0;
     border-radius: 100px;
@@ -236,6 +236,7 @@ h1 {
     box-shadow: 10px 10px 75px -12px rgba(0,0,0,1);
 -webkit-box-shadow: 10px 10px 75px -12px rgba(0,0,0,1);
 -moz-box-shadow: 10px 10px 75px -12px rgba(0,0,0,1);
+text-align: center;
   }
   
   .historico:hover {
@@ -306,6 +307,8 @@ header {
 }
 
 #historia {
+    
+    box-sizing: content-box;
     background-color: #1a448d;
     border-radius: 5%;
     box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
@@ -319,5 +322,214 @@ header {
     border-radius: 5%;
     box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75); 
+    -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75); }
+
+section {
+    padding: 200px 100px;
+}
+
+.inicio {
+    text-align: start;
+}
+
+.full-height {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px
+}
+
+#p1 {
+    width: 40;
+}
+
+@media only screen and (max-width: 600px) {
+    /* ... Otros estilos ... */
+    .hero h1 {
+        font-size: 24px; /* Tamaño de letra más pequeño para pantallas pequeñas */
+    }
+    /* Ajusta los márgenes según sea necesario */
+    .hero,
+    .services,
+    .full-height h2 {
+        padding: 10px;
+    }
+
+    header {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        padding: 50px 20px;
+    }
+
+    .full-height {
+        margin: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.miBoton,
+.iconico,
+.historico,
+.integracion {
+    box-shadow: none;
+    transition: none;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        background: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        padding: 30px 20px; /* Ajusta según sea necesario */
+    }
+}
+
+.full-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Ajusta el tamaño de la fuente según sea necesario */
+    .full-height h2 {
+        font-size: 24px;
+    }
+
+    .full-height p {
+        font-size: 16px;
+    }
+}
+
+#iconic-moments h2,
+#iconic-moments p,
+#historia h2,
+#historia p,
+#integrantes h2,
+#integrantes p {
+    margin-top: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #011936;
+    padding: 50px;
+    text-align: center;
+    background-image: url('http://www.w3.org/2000/svg');
+    background-size: 3000px 1000px;
+    background-attachment: fixed;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero,
+.services,
+.full-height h2 {
+    padding: 20px;
+}
+
+section {
+    padding: 200px 100px;
+}
+
+.full-height {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .hero,
+    .services,
+    .full-height h2 {
+        padding: 10px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    .full-height {
+        margin: 0;
+    }
+
+    .full-height h2 {
+        margin-top: 20px;
+    }
+
+    .full-height p {
+        margin-top: 10px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
