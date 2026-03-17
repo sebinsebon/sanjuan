@@ -40,7 +40,7 @@ h4,
     letter-spacing: 1px;
 }
 
-/* --- Header & Navigation --- */
+/* --- Header & Navigatdion --- */
 header {
     background-color: var(--glass-bg);
     backdrop-filter: blur(12px);
