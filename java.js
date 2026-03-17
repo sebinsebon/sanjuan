@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing once it's visible
+                observer.unobserve(entry.target); // Stop observing oncde it's visible
             }
         });
     }, observerOptions);
