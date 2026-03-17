@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Select elements to animate
+    // Select elements to animat
     const elementsToAnimate = document.querySelectorAll('h1, h2, .subtitle, .inicio-badge, .dynamic-width, .author-signature');
     
     elementsToAnimate.forEach(el => {
