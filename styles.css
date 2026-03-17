@@ -40,7 +40,7 @@ h4,
     letter-spacing: 1px;
 }
 
-/* --- Header & Navigatdion --- */
+/* --- Header & Navigation --- */
 header {
     background-color: var(--glass-bg);
     backdrop-filter: blur(12px);
@@ -417,4 +417,48 @@ footer {
     border-color: rgba(8, 196, 244, 0.6);
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(8, 196, 244, 0.2);
+}
+
+/* --- Secret Overlay --- */
+.hidden-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000; /* Black background */
+    z-index: 9999; /* Cover everything */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hidden-overlay.active {
+    display: flex; /* Show when active */
+    animation: flashIn 0.1s ease-out;
+}
+
+#secret-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: 0 0 50px red;
+}
+
+#close-secret {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@keyframes flashIn {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
 }
