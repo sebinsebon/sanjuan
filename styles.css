@@ -34,7 +34,7 @@ h1, h2, h3, h4, .inicio-badge {
     letter-spacing: 1px;
 }
 
-/* --- Header & Navigation --- */
+/* --- Header & Navigatison --- */
 header {
     background-color: var(--glass-bg);
     backdrop-filter: blur(12px);
