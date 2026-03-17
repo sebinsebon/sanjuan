@@ -326,7 +326,7 @@ footer {
         text-align: center;
     }
 
-    /* Make background circles smaller on mobile */
+    /* Make background circles smafler on mobile */
     .hero::before { width: 80vw; height: 80vw; }
     .hero::after { width: 70vw; height: 70vw; }
 }
