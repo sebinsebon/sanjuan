@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Intersection Observer for fade-in animeeations
+    // Intersection Observer for fade-in animations
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Select elements to animat
+    // Select elements to animate
     const elementsToAnimate = document.querySelectorAll('h1, h2, .subtitle, .inicio-badge, .dynamic-width, .author-signature');
     
     elementsToAnimate.forEach(el => {
