@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Intersection Observer for fade-in animations
+    // Intersection Observer for fade-in animeeations
     const observerOptions = {
         root: null,
         rootMargin: '0px',
