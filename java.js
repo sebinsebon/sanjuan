@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing oncde it's visible
+                observer.unobserve(entry.target); // Stop observing once it's visible
             }
         });
     }, observerOptions);
@@ -53,4 +53,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Secret overlay close logic
+    document.getElementById('close-secret').addEventListener('click', () => {
+        document.getElementById('secret-overlay').classList.remove('active');
+        const audio = document.getElementById('rene-audio');
+        audio.pause();
+        audio.currentTime = 0; // Reset audio
+    });
 });
+
+// Secret function triggered globally by the button
+function triggerSecret() {
+    const overlay = document.getElementById('secret-overlay');
+    const audio = document.getElementById('rene-audio');
+    
+    // Show the overlay
+    overlay.classList.add('active');
+    
+    // Play the audio
+    audio.play().catch(error => {
+        console.log("Audio playback blocked by browser policies:", error);
+    });
+}
